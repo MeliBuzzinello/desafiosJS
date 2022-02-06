@@ -1,3 +1,18 @@
+const cursos = [
+    {nombre: 'Javascript', precio: 15000},
+    {nombre: 'ReactJS', precio: 22000},
+    {nombre: 'AngularJS', precio: 22000},
+    {nombre: 'Desarrollo Web', precio: 16000},
+]
+
+
+cursos.unshift({nombre: 'Desarrollo Web', precio: 16000})
+console.log(cursos)
+
+const nombres = cursos.map((el) => el.precio)
+console.log(nombres)
+
+
 class Alumno {
     constructor(legajo, nombre, apellido, nota) {
         this.legajo = legajo;
@@ -38,16 +53,18 @@ function promedio() {
     let cantAprobados = 0
     let cantReprobados = 0
 
-    for (const al_no of bdAlumnos) {
-        al_no.nota
-        sumaNota = sumaNota + Number(al_no.nota)
+    // for (const al_no of bdAlumnos) {
+    //     al_no.nota
+    //     sumaNota = sumaNota + Number(al_no.nota)
+    bdAlumnos.forEach ( (al_no) =>{   sumaNota += Number(al_no.nota)
 
         if (al_no.nota >= 6) {
-            cantAprobados = cantAprobados +1
+            cantAprobados ++
         }
         else
-            cantReprobados = cantReprobados +1
-    }
+            cantReprobados ++
+        } )
+
     let promedio = sumaNota / bdAlumnos.length
     console.log(sumaNota + " " + bdAlumnos.length)
     promedio = parseFloat(promedio)
@@ -57,3 +74,4 @@ function promedio() {
 }
 
 promedio()
+

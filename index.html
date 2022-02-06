@@ -1,18 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registro de notas</title>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
+
 <body>
-    <h1>Ejercitamos con Javascrip</h1>
+    <h1>Registro de notas</h1>
+    <h4 id="subtitulo">Ingrese número de legajo</h4>
+    <select id='selecId'>
+        <option value=''>0</option>
+        <option value='1'>1</option>
+        <option value='2'>2</option>
+        <option value='3'>3</option>
+        <option value='4'>4</option>
+        <option value='5'>5
+    </select>
+    
+    <div id="alumno"></div>
+
+    <h4>Ingrese la nota del alumno</h4>
+    <input id="txtNota" type="text">
+    <button id="btnAceptar" click="btn">Aceptar</button>
+
+    <div id="listaNotas"></div>
+
+    <br>
+  
+
+
     <!--<button onclick="mostrarArray()">Productos</button>-->
 
+    <script src="js/array.js"></script>
+    <script src="js/desafioDom.js"></script>
 
-    
 
-<script src="js/desafioArrays.js"></script>
 </body>
+
 </html>

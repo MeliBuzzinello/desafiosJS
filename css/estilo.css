@@ -1,0 +1,11 @@
+#subtitulo {
+    display: inline-block;
+}
+
+.estiloAprobado {
+    background-color:rgb(138, 223, 11);
+}
+
+.estiloDesaprobado {
+    background-color: red;
+}
