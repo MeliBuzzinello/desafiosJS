@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <h1>Registro de notas</h1>
+    <!-- <h1>Registro de notas</h1>
     <h4 id="subtitulo">Ingrese número de legajo</h4>
     <select id='selecId'>
         <option value=''>0</option>
@@ -20,25 +20,42 @@
         <option value='4'>4</option>
         <option value='5'>5
     </select>
-    
     <div id="alumno"></div>
-
     <h4>Ingrese la nota del alumno</h4>
     <input id="txtNota" type="text">
-    <button id="btnAceptar" click="btn">Aceptar</button>
-
+    <button id="btnAceptar">Aceptar</button>
     <div id="listaNotas"></div>
+    <button id="btnLimpiar">Limpiar</button>
+    <br> -->
 
-    <br>
-  
+    <div id="contenedor">
+        <div id="contenedorHijo">
+            <form id="formulario" action="">
+                <h2>Ingrese sus datos de contacto</h2>
+                <h4 class="subtitulo">Nombre</h4> <input id="txtNombre" type="text"><div id="icNombre"></div> 
+              </br>
+                <h4 class="subtitulo">Telefono</h4> <input id="txtTelefono" type="text">
+                <div id="DivNum"></div><br>
+                <h4 class="subtitulo">Horarios de atencion</h4>
+                <select name="" id="selectHorario">
+                    <option value="select0"> </option>
+                    <option value="select1">Turno mañana</option>
+                    <option value="select2">Turno tarde</option>
+                </select> 
+                <div id="DivHorario"></div>
+                <button id="btnEnviar" >ENVIAR</button>
+                <div id="DivEnviado"></div>
+
+            </form>
+        </div>
+    </div>
+
 
 
     <!--<button onclick="mostrarArray()">Productos</button>-->
 
     <script src="js/array.js"></script>
-    <script src="js/desafioDom.js"></script>
-
-
+    <script src="js/desafioEventos.js" defer></script>
 </body>
 
 </html>

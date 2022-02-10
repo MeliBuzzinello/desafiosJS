@@ -1,13 +1,16 @@
+
+// DOM
 const alumno = document.getElementById('alumno')
 const btnAceptar = document.getElementById('btnAceptar')
 const selecId = document.getElementById('selecId')
 const txtNota = document.getElementById('txtNota')
 const listaNotas = document.getElementById('listaNotas')
-
+const btnLimpiar = document.getElementById('btnLimpiar')
 
 
 // EVENTS
 btnAceptar.addEventListener('click', () => {
+
     let notaAlumno = bdAlumnos.find(el => el.legajo == selecId.value)
     console.log(notaAlumno);
     notaAlumno.nota = parseInt(txtNota.value)
@@ -53,6 +56,12 @@ selecId.addEventListener('change', () => {
     }
 })
 
+btnLimpiar.addEventListener('click', () => {
+
+    while (listaNotas.firstChild) {
+        listaNotas.removeChild(listaNotas.firstChild);
+    }
+})
 
 //FUNCTIONS
 function mostrarAlumnos(array) {
